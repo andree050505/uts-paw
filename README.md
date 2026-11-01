@@ -1,6 +1,5 @@
 # Resep Masakan Nusantara
 
-Aplikasi web SPA berbasis React untuk mengelola dan menampilkan koleksi resep masakan Nusantara.
 
 ## Identitas Mahasiswa
 
@@ -24,21 +23,6 @@ Aplikasi web SPA berbasis React untuk mengelola dan menampilkan koleksi resep ma
 - Tentang: informasi pengembang dan tautan repositori
 - Fallback 404: penanganan halaman rute yang tidak ditemukan
 
-## Panduan Menjalankan
-
-Masuk ke folder `app`:
-
-```bash
-cd app
-npm install
-npm run dev
-```
-
-Untuk menjalankan pengujian unit:
-
-```bash
-npm run cek
-```
 
 ## Tangkapan Layar
 
