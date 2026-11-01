@@ -26,6 +26,6 @@
 - Fallback 404: penanganan halaman rute yang tidak ditemukan
 
 
-## Tangkapan Layar
+## Tangkapan Layar (Beranda)
 
 ![Tangkapan Layar Beranda](screenshot.png)
