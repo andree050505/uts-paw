@@ -25,6 +25,11 @@
 - Tentang: informasi pengembang dan tautan repositori
 - Fallback 404: penanganan halaman rute yang tidak ditemukan
 
+  ## Menjalankan Secara Lokal
+  cd app
+npm install
+npm run dev
+
 
 ## Tangkapan Layar (Koleksi)
 
