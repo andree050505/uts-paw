@@ -47,12 +47,9 @@ body {
 }
 
 #kaki-halaman {
-  text-align: center;
-  padding: 1.25rem 1rem;
-  font-size: 0.85rem;
-  color: #666;
-  border-top: 1px solid var(--warna-tepi);
-  background: var(--warna-kartu);
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 a {
