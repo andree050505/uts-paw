@@ -1,0 +1,231 @@
+/* ── Variabel CSS ────────────────────────────────────────────────────────── */
+:root {
+  --warna-primer: #c0392b;
+  --warna-primer-gelap: #96281b;
+  --warna-latar: #fffaf7;
+  --warna-kartu: #ffffff;
+  --warna-teks: #1a1a1a;
+  --warna-tepi: #e2d9d3;
+  --warna-hover: #fdf0ed;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--warna-teks);
+  background: var(--warna-latar);
+}
+
+/* ── Reset & Base ────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--warna-primer);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Layout ──────────────────────────────────────────────────────────────── */
+header {
+  background: var(--warna-primer);
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style: none;
+  padding: 0.75rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header nav a {
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.15s;
+}
+
+header nav a:hover,
+header nav a.aktif {
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+/* ── Tipografi ───────────────────────────────────────────────────────────── */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--warna-primer);
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1rem;
+  margin: 1rem 0;
+}
+
+dt {
+  font-weight: 700;
+  color: #555;
+}
+
+dd {
+  margin: 0;
+}
+
+/* ── Komponen Kartu ──────────────────────────────────────────────────────── */
+.daftar-kartu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.kartu {
+  background: var(--warna-kartu);
+  border: 1px solid var(--warna-tepi);
+  border-radius: 8px;
+  padding: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.kartu:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.kartu p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+/* ── Alat Koleksi (pencarian + filter) ───────────────────────────────────── */
+.alat-koleksi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.alat-koleksi input[type='search'],
+.alat-koleksi select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--warna-tepi);
+  border-radius: 6px;
+  font-size: 1rem;
+  flex: 1 1 160px;
+}
+
+/* ── Tombol Aksi ─────────────────────────────────────────────────────────── */
+.aksi {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.tombol-hapus {
+  padding: 0.5rem 1.2rem;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.tombol-hapus:hover {
+  background: #b91c1c;
+}
+
+.tombol-tautan {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--warna-primer);
+  color: white !important;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.tombol-tautan:hover {
+  background: var(--warna-primer-gelap);
+  text-decoration: none !important;
+}
+
+/* ── Badge Kesulitan ─────────────────────────────────────────────────────── */
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-mudah {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-sedang {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-sulit {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ── Responsif ───────────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .daftar-kartu {
+    grid-template-columns: 1fr;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+  }
+}

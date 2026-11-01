@@ -1,0 +1,37 @@
+.tabel-gulir {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabel-data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.tabel-data th,
+.tabel-data td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--warna-tepi);
+}
+
+.tabel-data thead th {
+  background: var(--warna-primer);
+  color: white;
+  font-weight: 700;
+}
+
+.tabel-data tbody tr:hover {
+  background: var(--warna-hover);
+}
+
+.tabel-data tfoot tr {
+  background: var(--warna-kartu);
+  font-weight: 700;
+}
+
+.tabel-data tfoot th,
+.tabel-data tfoot td {
+  border-top: 2px solid var(--warna-tepi);
+}

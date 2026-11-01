@@ -1,0 +1,54 @@
+.formulir {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.formulir h1 {
+  margin-bottom: 1rem;
+}
+
+.formulir label {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.formulir input,
+.formulir select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--warna-tepi);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: var(--warna-kartu);
+  color: inherit;
+}
+
+.formulir input:focus,
+.formulir select:focus {
+  outline: 2px solid var(--warna-primer);
+  outline-offset: 2px;
+}
+
+.formulir [role='alert'] {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.formulir button[type='submit'] {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: var(--warna-primer);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.formulir button[type='submit']:hover {
+  background: var(--warna-primer-gelap);
+}

@@ -1,10 +1,98 @@
 [
   {
-    "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "id": 1,
+    "judul": "Rendang Daging Sapi",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Sumatera Barat",
+    "waktuMasak": 180,
+    "tingkatKesulitan": "sulit"
+  },
+  {
+    "id": 2,
+    "judul": "Soto Ayam Lamongan",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Jawa Timur",
+    "waktuMasak": 90,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": 3,
+    "judul": "Gado-gado Betawi",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "DKI Jakarta",
+    "waktuMasak": 45,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": 4,
+    "judul": "Klepon Pandan",
+    "kategori": "Kudapan",
+    "daerahAsal": "Jawa Tengah",
+    "waktuMasak": 40,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": 5,
+    "judul": "Es Cendol Dawet",
+    "kategori": "Minuman",
+    "daerahAsal": "Jawa Tengah",
+    "waktuMasak": 30,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": 6,
+    "judul": "Sambal Matah Bali",
+    "kategori": "Sambal",
+    "daerahAsal": "Bali",
+    "waktuMasak": 15,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": 7,
+    "judul": "Papeda Maluku",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Maluku",
+    "waktuMasak": 60,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": 8,
+    "judul": "Pempek Palembang",
+    "kategori": "Kudapan",
+    "daerahAsal": "Sumatera Selatan",
+    "waktuMasak": 75,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": 9,
+    "judul": "Bandrek Jahe Rempah",
+    "kategori": "Minuman",
+    "daerahAsal": "Jawa Barat",
+    "waktuMasak": 20,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": 10,
+    "judul": "Ayam Betutu Khas Bali",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Bali",
+    "waktuMasak": 240,
+    "tingkatKesulitan": "sulit"
+  },
+  {
+    "id": 11,
+    "judul": "Sambal Ijo Padang",
+    "kategori": "Sambal",
+    "daerahAsal": "Sumatera Barat",
+    "waktuMasak": 20,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": 12,
+    "judul": "Wajik Ketan Merah",
+    "kategori": "Kudapan",
+    "daerahAsal": "Jawa Tengah",
+    "waktuMasak": 60,
+    "tingkatKesulitan": "sedang"
   }
 ]
