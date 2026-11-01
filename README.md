@@ -42,4 +42,4 @@ npm run cek
 
 ## Tangkapan Layar
 
-![Tangkapan Layar Beranda](app/public/screenshot.png)
+![Tangkapan Layar Beranda](screenshot.png)
