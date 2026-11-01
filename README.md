@@ -42,4 +42,4 @@ npm run cek
 
 ## Tangkapan Layar
 
-<!-- Masukkan tangkapan layar antarmuka di sini -->
+![Tangkapan Layar Beranda](public/screenshot.png)

@@ -33,6 +33,28 @@ body {
   min-height: 100dvh;
 }
 
+#navigasi-utama {
+  background: var(--warna-primer);
+  color: white;
+}
+
+#konten-utama {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+#kaki-halaman {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid var(--warna-tepi);
+  background: var(--warna-kartu);
+}
+
 a {
   color: var(--warna-primer);
   text-decoration: none;
@@ -40,6 +62,14 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--warna-primer-gelap);
+}
+
+header nav a:active {
+  opacity: 0.8;
 }
 
 /* ── Layout ──────────────────────────────────────────────────────────────── */

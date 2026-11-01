@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { KoleksiProvider } from './context/KoleksiContext.jsx'
-import Navigasi from './components/Navigasi.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 import Beranda from './pages/Beranda.jsx'
 import Koleksi from './pages/Koleksi.jsx'
 import Detail from './pages/Detail.jsx'
@@ -13,10 +14,8 @@ import './App.css'
 export default function App() {
   return (
     <KoleksiProvider>
-      <header>
-        <Navigasi />
-      </header>
-      <main>
+      <Header />
+      <main id="konten-utama">
         <Routes>
           <Route path="/" element={<Beranda />} />
           <Route path="/koleksi" element={<Koleksi />} />
@@ -27,6 +26,8 @@ export default function App() {
           <Route path="*" element={<TidakDitemukan />} />
         </Routes>
       </main>
+      <Footer />
     </KoleksiProvider>
   )
 }
+
